@@ -1,4 +1,5 @@
 #include "./include/Form.hpp"
+#include "./include/Bureaucrat.hpp"
 #include <iostream>
 
 const char* Form::GradeTooHighException::what() const throw() {
@@ -39,14 +40,5 @@ void Form::beSigned(const Bureaucrat& b) {
 		throw Form::GradeTooLowException();
 	} else {
 		m_isSigned = true;
-	}
-}
-
-void Form::signForm(const Bureaucrat& b) {
-	try {
-		beSigned(b);
-		std::cout << b.getName() << " signs " << m_name << std::endl;
-	} catch (const std::exception& e) {
-		std::cout << b.getName() << " cannot sign " << m_name << " because " << e.what() << std::endl;
 	}
 }

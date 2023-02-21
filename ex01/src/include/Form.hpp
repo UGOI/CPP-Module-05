@@ -1,7 +1,8 @@
 #pragma once
 #include <string>
 #include <stdexcept>
-#include "./Bureaucrat.hpp"
+
+class Bureaucrat;
 
 class Form {
 public:
@@ -21,7 +22,6 @@ public:
 	int getGradeToSign() const;
 	int getGradeToExecute() const;
 	void beSigned(const Bureaucrat& b);
-	void signForm(const Bureaucrat& b);
 
 private:
 	const std::string m_name;

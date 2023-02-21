@@ -16,20 +16,20 @@ int main()
 	std::cout << "Shrubbery Form" << std::endl;
 	try
 	{
-		shrubberyForm.signForm(recrute);
+		recrute.signForm(shrubberyForm);
 		shrubberyForm.execute(recrute);
 	}
 	catch(const std::exception& e)
 	{
 		std::cerr << e.what() << '\n';
 	}
-	
+
 	std::cout << std::endl;
 
 	std::cout << "Robotomy Form" << std::endl;
 	try
 	{
-		robotomyForm.signForm(recrute);
+		recrute.signForm(robotomyForm);
 		robotomyForm.execute(recrute);
 	}
 	catch(const std::exception& e)
@@ -41,7 +41,7 @@ int main()
 	std::cout << "Presidential Form" << std::endl;
 	try
 	{
-		presidentialForm.signForm(recrute);
+		recrute.signForm(presidentialForm);
 		presidentialForm.execute(recrute);
 	}
 	catch(const std::exception& e)
@@ -53,7 +53,7 @@ int main()
 	std::cout << "Shrubbery Form" << std::endl;
 	try
 	{
-		shrubberyForm.signForm(Loser);
+		recrute.signForm(shrubberyForm);
 		shrubberyForm.execute(Loser);
 	}
 	catch(const std::exception& e)
@@ -65,7 +65,7 @@ int main()
 	std::cout << "Robotomy Form" << std::endl;
 	try
 	{
-		robotomyForm.signForm(Loser);
+		recrute.signForm(robotomyForm);
 		robotomyForm.execute(Loser);
 	}
 	catch(const std::exception& e)
@@ -77,7 +77,7 @@ int main()
 	std::cout << "Presidential Form" << std::endl;
 	try
 	{
-		presidentialForm.signForm(Loser);
+		recrute.signForm(presidentialForm);
 		presidentialForm.execute(Loser);
 	}
 	catch(const std::exception& e)
@@ -86,7 +86,7 @@ int main()
 	}
 	std::cout << std::endl;
 
-	
+
 	return 0;
 
 }

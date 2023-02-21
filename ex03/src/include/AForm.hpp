@@ -1,7 +1,8 @@
 #pragma once
 #include <string>
 #include <stdexcept>
-#include "./Bureaucrat.hpp"
+
+class Bureaucrat;
 
 class AForm {
 public:
@@ -23,7 +24,6 @@ public:
     virtual bool getIsSigned() const;
     virtual int getGradeToSign() const;
     virtual int getGradeToExecute() const;
-	virtual void signForm(const Bureaucrat& b);
     virtual void beSigned(const Bureaucrat& b);
     virtual void execute(const Bureaucrat& executor) const = 0;
 private:
